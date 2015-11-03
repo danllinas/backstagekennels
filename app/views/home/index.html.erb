@@ -1,2 +1,68 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!-- Full Width Image Header -->
+<div class="header-image">
+    <div class="headline">
+        <div class="container">
+          <div class="row">
+            <%= image_tag "logo.png", alt: "Backstage Kennels" %>
+          </div>
+          <div class="row">
+            <%= image_tag "golden_puppy_show", class: "img-circle img-responsive center-block", alt: "Golden Retriever puppy" %>
+          </div>
+          <div class="row">
+            <%= image_tag "subheader.png", alt: "Quality PBGVs and Golden Retrievers" %>
+          </div>
+        </div>
+    </div>
+</div>
+
+<%= render 'layouts/header' %>
+
+<!-- Page Content -->
+<div class="container content">
+
+    <hr class="featurette-divider">
+
+    <!-- First Featurette -->
+    <div class="featurette" id="about">
+        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+        <h2 class="featurette-heading">This First Heading
+            <span class="text-muted">Will Catch Your Eye</span>
+        </h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Second Featurette -->
+    <div class="featurette" id="services">
+        <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+        <h2 class="featurette-heading">The Second Heading
+            <span class="text-muted">Is Pretty Cool Too.</span>
+        </h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Third Featurette -->
+    <div class="featurette" id="contact">
+        <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+        <h2 class="featurette-heading">The Third Heading
+            <span class="text-muted">Will Seal the Deal.</span>
+        </h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!-- /.container -->
