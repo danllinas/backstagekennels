@@ -1,7 +1,8 @@
 var ready;
 ready = function() {
   var navbar = $('nav');
-  var origOffsetY = $('.header-image').height();
+  var origOffsetY = $('.header-image').outerHeight(true);
+  console.log(origOffsetY);
 
   function scroll() {
       if ($(window).scrollTop() >= origOffsetY) {
