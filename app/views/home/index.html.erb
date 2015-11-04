@@ -1,54 +1,54 @@
 <!-- Full Width Image Header -->
-<div class="header-image">
-    <div class="headline">
-        <div class="container">
-          <div class="row">
-            <%= image_tag "logo.png", alt: "Backstage Kennels" %>
-          </div>
-          <div class="row">
-            <%= image_tag "golden_puppy_show.jpg", class: "img-circle img-responsive center-block", alt: "Golden Retriever puppy" %>
-          </div>
-          <div class="row">
-            <%= image_tag "subheader.png", alt: "Quality PBGVs and Golden Retrievers" %>
-          </div>
-        </div>
+<header class="header-image">
+  <div class="headline">
+    <div class="container">
+      <div class="row">
+        <%= image_tag "logo.png", alt: "Backstage Kennels" %>
+      </div>
+      <div class="row">
+        <%= image_tag "golden_puppy_show.jpg", class: "img-circle img-responsive center-block", alt: "Golden Retriever puppy" %>
+      </div>
+      <div class="row">
+        <%= image_tag "subheader.png", alt: "Quality PBGVs and Golden Retrievers" %>
+      </div>
     </div>
-</div>
+  </div>
+</header>
 
 <%= render 'layouts/header' %>
 
 <!-- Page Content -->
 <div class="container content">
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="about">
 
     <!-- First Featurette -->
-    <div class="featurette" id="about">
+    <div class="featurette">
         <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-        <h2 class="featurette-heading">This First Heading
-            <span class="text-muted">Will Catch Your Eye</span>
+        <h2 class="featurette-heading">SECTION 1
+            <span class="text-muted">About section?</span>
         </h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="services">
 
     <!-- Second Featurette -->
-    <div class="featurette" id="services">
+    <div class="featurette">
         <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-        <h2 class="featurette-heading">The Second Heading
-            <span class="text-muted">Is Pretty Cool Too.</span>
+        <h2 class="featurette-heading">SECTION 2
+            <span class="text-muted">About the dogs and breeding credentials.</span>
         </h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="contact">
 
     <!-- Third Featurette -->
-    <div class="featurette" id="contact">
+    <div class="featurette">
         <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-        <h2 class="featurette-heading">The Third Heading
-            <span class="text-muted">Will Seal the Deal.</span>
+        <h2 class="featurette-heading">Section 3
+            <span class="text-muted">Contact INfo</span>
         </h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
@@ -59,7 +59,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
+                <p>&copy;Backstage Kennels 2015</p>
             </div>
         </div>
     </footer>
