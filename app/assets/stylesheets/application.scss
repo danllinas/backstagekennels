@@ -36,22 +36,43 @@ img {
    -o-background-size: cover;
 }
 
+#mission {
+  background: url('green-grassland.jpg') no-repeat center center scroll;
+  a{
+    text-decoration: none;
+    font-size: 2em;
+    color: green;
+  }
+}
+
+#goldens{
+  background: url('dog_show.jpg') no-repeat center center scroll;
+  background-size: cover;
+  color: antiquewhite;
+  a{
+    text-decoration: none;
+    color: gold;
+  }
+}
+
 .headline {
   padding: 120px 0;
 }
 
-.featurette-divider {
-  margin: 80px 0;
+.divider{
+  background-color: black;
+  color: black;
+  font-size: 5px;
+  padding: 8px 0;
+  .featurette-divider {
+    margin: 5px;
+  }
 }
+
 
 .featurette {
   overflow: hidden;
   margin-top: 2%;
-  a{
-    text-decoration: none;
-    font-size: 2em;
-    color: gold;
-  }
 }
 
 .section1{
