@@ -55,6 +55,36 @@ img {
   }
 }
 
+#pbgvs {
+  background: url('pbgv_yard.JPG') no-repeat center center scroll;
+  background-size: cover;
+  color: antiquewhite;
+  a{
+    text-decoration: none;
+    color: gold;
+  }
+}
+
+#contact {
+  background: url('empty-stage.jpg') no-repeat center center scroll;
+  background-size: cover;
+  color: antiquewhite;
+  a{
+    text-decoration: none;
+    color: gold;
+  }
+  h3{
+    margin-left: 1%;
+    margin-top: 20%;
+  }
+  p {
+    margin-left: 1%;
+  }
+  img {
+    margin-top: 20%;
+  }
+}
+
 .headline {
   padding: 120px 0;
 }
@@ -69,7 +99,6 @@ img {
   }
 }
 
-
 .featurette {
   overflow: hidden;
   margin-top: 2%;
@@ -82,8 +111,7 @@ img {
 
 .featurette-image.pull-left {
   margin-right: 40px;
-  width: 35%;
-  height: 35%;
+  width: 450px;
 }
 
 .featurette-image.pull-right {
@@ -97,7 +125,18 @@ img {
 }
 
 footer {
-  margin: 50px 0;
+  background-color: #2c2c2c;
+  color: antiquewhite;
+  img {
+    margin: 1% 0;
+    padding: 1% 0;
+  }
+  ul, li {
+    list-style: none;
+  }
+  a{
+    color: antiquewhite;
+  }
 }
 
 @media(max-width:1200px) {

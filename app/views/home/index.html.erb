@@ -1,4 +1,3 @@
-<!-- Full Width Image Header -->
 <header class="header-image">
   <div class="headline">
     <div class="container">
@@ -14,20 +13,10 @@
     </div>
   </div>
 </header>
-
-<%= render 'layouts/header' %>
-
-<!-- Page Content -->
 <div class="container-fluid content section1" id="mission">
-
-  <!-- <hr class="featurette-divider" id="about"> -->
-
-  <!-- First Featurette -->
   <div class="featurette">
     <%= image_tag "golden_young1.jpg", class: "featurette-image img-circle img-responsive pull-right", alt: "Young Golden Retriever" %>
-    <h2 class="featurette-heading">Our mission<br>
-      <!-- <span class="text-muted">Our mission </span> -->
-    </h2><br>
+    <h2 class="featurette-heading" style="color:green">Our mission<br></h2><br>
     <p class="lead">Our mission is to develop the best quality pet and show Golden Retrievers.</p>
     <p class="lead">
       Many of our puppies have gone on to become therapy, show, tracking, and agility dogs.
@@ -40,14 +29,12 @@
 </div>
 <div class="divider">
   Duncan is the best dog ever!!!
-  <!-- <hr class="featurette-divider"> -->
 </div>
 <div class="container-fluid section2" id="goldens">
-  <!-- Second Featurette -->
   <div class="featurette">
     <%= image_tag  "golden_family.jpg", class: "featurette-image img-circle img-responsive pull-left", alt: "Golden Retriever mother with puppy." %>
 
-    <h2 class="featurette-heading" style="color:gold">Our adults have all their health</h2><br>
+    <h2 class="featurette-heading" style="color:gold">Our Goldens have all their health</h2><br>
     <p class="lead">clearences (hips, elbows & eyes). Backstage puppies come with health certificates and their first set of shots.</p>
     <p class="lead">
       A complete book of information is given to each new owner about their puppy. All of our dogs are bred and raised at home. Each puppy is potty trained before they go to their new homes. They are our family members before they become yours!
@@ -58,35 +45,50 @@
     <p class="lead">
       We occassionally donate a puppy to <%= link_to "Paws for the Cause", "#" %>, located in Naples, FL. Their Mission Paws with a cause enhances the independence and quality of life for people with disabilities through custom-trained assistance dogs.
     </p>
+    <h3><%= link_to "Click here to see our litters!", "#" %></h3>
+
   </div>
 </div>
-
-
-
-
-  <hr class="featurette-divider" id="contact">
-
-  <!-- Third Featurette -->
+<div class="divider">
+  Duncan is the best dog ever!!!
+</div>
+<div class="container-fluid section3" id="pbgvs">
   <div class="featurette">
-    <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-    <h2 class="featurette-heading">Section 3
-        <span class="text-muted">Contact INfo</span>
-    </h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <%= image_tag  "pbgv_kennel.JPG", class: "featurette-image img-circle img-responsive pull-right", alt: "PBGV puppies in a kennel." %>
+    <h2 class="featurette-heading" style="color:gold">The Petit Basset Griffon Vendeen</h2><br>
+    <p class="lead"> is usually called "PBGV" for short. Known as the "happy breed," the PBGV is independent, curious, intelligent, and inventive.</p>
+    <p class="lead">
+      We start house breaking as soon as possible. Our PBGVs crave attention and love, and they make great companions and family pets.
+    </p>
+    <p class="lead">
+      PBGVs are best suited to active owners with a fenced yard and a sense of humor. Adults should weigh between 25-35 pounds. They come in a variety of color combinations.
+    </p>
+    <h3><%= link_to "Click here to see our litters!", "#" %></h3>
   </div>
-
-  <hr class="featurette-divider">
-
-  <!-- Footer -->
-  <footer>
+</div>
+<div class="divider">
+  Duncan is the best dog ever!!!
+</div>
+<div class="container-fluid section3" id="contact">
+  <div class="featurette">
     <div class="row">
-      <div class="col-lg-12">
-        <p>&copy;Backstage Kennels 2015</p>
-        <p>
-          Members of The Golden Retriver Club of American and the Treasure Coast Kennel Club.
+      <div class="col-xs-4">
+        <h3 class="featurette-heading" style="color:gold">Contact Us</h3><br>
+        <p class="lead">
+          Email: <%= mail_to "backstagekennels@gmail.com", "Backstage Kennels" %><br>
+          Phone: 772-485-9595<br>
+          Port St. Lucie, FL 34983<br>
         </p>
       </div>
+      <div class="col-xs-8">
+        <%= image_tag  "duncan.jpg", class: "featurette-image img-circle img-responsive pull-left", alt: "Adult PBGV with tie." %>
+      </div>
     </div>
-  </footer>
+    <div class="row">
+      <h2 class="text-center"><%= link_to "Click here to see our litters!", "#"%></h2>
+    </div>
+  </div>
 </div>
-<!-- /.container -->
+<div class="divider">
+  Duncan is the best dog ever!!!
+</div>
