@@ -25,15 +25,23 @@ img {
   margin: 1%;
  }
 
+.navbar {
+  margin: 0;
+}
+
+.navbar-wrapper{
+  height: 50px;
+}
+
 .header-image {
-   display: block;
-   width: 100%;
-   text-align: center;
-   background: url('curtain.jpg') no-repeat center center scroll;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
-   -o-background-size: cover;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: url('curtain.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #mission {
@@ -91,8 +99,6 @@ img {
 
 .divider{
   background-color: black;
-  color: black;
-  font-size: 5px;
   padding: 8px 0;
   .featurette-divider {
     margin: 5px;
@@ -106,7 +112,7 @@ img {
 
 .section1{
   background: green;
-  margin-top: -2%;
+  // margin-top: -2%;
 }
 
 .featurette-image.pull-left {
