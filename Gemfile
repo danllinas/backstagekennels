@@ -8,6 +8,7 @@ gem 'pg'
 gem 'devise'
 gem 'paperclip', '~> 4.2'
 gem 'haml'
+gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.5'
