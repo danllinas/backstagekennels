@@ -1,0 +1,6 @@
+.container
+  %h1 "New Upload"
+  = simple_form_for(@post, html: {class: 'form-horizontal'}) do |f|
+    = f.input :image, html: {class: 'form-control'}
+    = f.input :description, html: {class: 'form-control'}
+    = f.button :submit, html: {class: 'form-control'}

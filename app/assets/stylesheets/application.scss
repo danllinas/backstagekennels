@@ -63,6 +63,44 @@ img {
   }
 }
 
+.litter-index{
+  position: relative;
+  h1{
+    margin: 1%;
+    color: gold;
+  }
+  .post-wrapper{
+    display: inline-block;
+    position: relative;
+    color: navy;
+    font-size: 1.2em;
+    // font-weight: bold;
+    margin-top: 5%;
+  }
+  p {
+    font-size: 1.5em;
+    margin-top: 2%
+  }
+  a{
+    color: green;
+    font-weight: bold;
+  }
+}
+
+.litter-index:after{
+  content: "";
+  display: block;
+  background: url('green-grassland.jpg') no-repeat center center scroll;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 #pbgvs {
   background: url('pbgv_yard.JPG') no-repeat center center scroll;
   background-size: cover;

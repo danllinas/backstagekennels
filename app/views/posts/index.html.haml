@@ -1,1 +1,22 @@
-%h1 Litters!
+.navbar-wrapper
+  =render "layouts/header"
+.container-fluid.litter-index
+  .row
+    .container
+      %h1.text-center Thank you for your interest in our Goldens and PBGVs.
+      %h2.text-center
+        Scroll down to see our currently available puppies!
+      %p All Backstage puppies come with health certificates and their first set of shots. A complete book of information is given to each new owner about their puppy. All of our dogs are bred and raised at home. Each puppy is potty trained before they go to their new homes. They are our family members before they become yours!
+      %p The day after our puppies are born, a puppy cam is set up for the potential owners to watch the puppies grow and play.
+      %p We strive to have each puppy with the best pedigree!
+    - @posts.each do |post|
+      .post-wrapper
+        .col-xs-5
+          = image_tag post.image, class: 'img-responsive img-rounded'
+        .col-xs-7
+          = simple_format post.description
+          -if current_user
+            = link_to "Edit", "#"
+            = link_to "Destroy", "#"
+          -else
+            = mail_to "backstagekennels@gmail.com", "Click here to reserve a puppy today!"
