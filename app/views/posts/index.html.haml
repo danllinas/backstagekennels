@@ -12,11 +12,11 @@
     - @posts.each do |post|
       .post-wrapper
         .col-xs-5
-          = image_tag post.image, class: 'img-responsive img-rounded'
+          = image_tag post.image(:medium), class: 'img-responsive img-rounded'
         .col-xs-7
           = simple_format post.description
-          -if current_user
-            = link_to "Edit", "#"
-            = link_to "Destroy", "#"
+          -if current_user.admin?
+            = link_to "Edit", edit_post_path(post)
+            = link_to "Destroy", post, method: :delete, data: {confirm: "Are you sure you want to delete this post?"}
           -else
             = mail_to "backstagekennels@gmail.com", "Click here to reserve a puppy today!"

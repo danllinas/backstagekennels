@@ -14,19 +14,19 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#mission">Mission</a>
+          <%= link_to "Mission", root_path(anchor: "mission") %>
         </li>
         <li>
-          <a href="#goldens">Goldens</a>
+          <%= link_to "Goldens", root_path(anchor: "goldens") %>
         </li>
         <li>
-          <a href="#pbgvs">PBGVs</a>
+          <%= link_to "PBGVs", root_path(anchor: "pbgvs") %>
         </li>
         <li>
-          <%= link_to "Puppies", "litters" %>
+          <%= link_to "Puppies", "puppies" %>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <%= link_to "Contact", root_path(anchor: "contact") %>
         </li>
       </ul>
     </div>

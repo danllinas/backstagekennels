@@ -1,6 +1,16 @@
 .container
-  %h1 "New Upload"
-  = simple_form_for(@post, html: {class: 'form-horizontal'}) do |f|
-    = f.input :image, html: {class: 'form-control'}
-    = f.input :description, html: {class: 'form-control'}
-    = f.button :submit, html: {class: 'form-control'}
+  -if current_user.try(:admin?)
+    %h1 Upload Pictures and Descriptions
+    %p Hey, Diana! Here is your little tool for uploading pictures and descriptions of your puppies.
+    %p Simply choose the picture you want to upload from you computer and write the description in the box. The text will be formatted pretty much the same as you write it here, so if you want to see line breaks or new paragraphs, just space the text out in the box the way you want.
+    %p Only you (as the admin) will have access to this page. If you want to give someone else access, just send me their email address. I have to make them admins in the database for them to have access.
+    %p Sorry this page doesn't look too nice, but since it's just an upload tool for you, I thought I could save some time and leave it unstyled. :)
+    %p On the "puppies" page, you'll see links to "edit" or "destory" the posts. Only admins see that, so don't worry, no one else will be able to do that. They see a link to backstage's email that says, "Click here to reserve your puppy today!"
+    %p Hope you like your website! I had a lot of fun making it. Please remember to refer me to all your breeder friends when the opportunity arises ;)
+    = render "form"
+  -else
+    %h1 Nothing to see here.
+  %br
+  %br
+  %p Dunan always sends his best!!!!!
+  = image_tag "duncan.jpg", class: "img-responsive img-circle"

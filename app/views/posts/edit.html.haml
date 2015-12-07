@@ -1,0 +1,11 @@
+.container
+  -if current_user.try(:admin?)
+    %h1 Edit Pictures and Descriptions
+    %p Use this to change the picture or the text description.
+    =render "form"
+  -else
+    %h1 Nothing to see here.
+  %br
+  %br
+  %p Dunan always sends his best!!!!!
+  = image_tag "duncan.jpg", class: "img-responsive img-circle"
