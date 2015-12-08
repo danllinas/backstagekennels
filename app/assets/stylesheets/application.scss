@@ -171,7 +171,7 @@ img {
 footer {
   background-color: #2c2c2c;
   color: antiquewhite;
-  img {
+  a.img {
     margin: 1% 0;
     padding: 1% 0;
   }
@@ -180,6 +180,9 @@ footer {
   }
   a, a:hover{
     color: antiquewhite;
+  }
+  p {
+    margin: 10px;
   }
 }
 
