@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/bartoszkopinski/aws-s3.git
+  revision: 6d8525e5f69d4d46ff51a30ca8976c7584b68f36
+  specs:
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,12 +49,11 @@ GEM
     autoprefixer-rails (6.0.3)
       execjs
       json
-    aws-sdk (2.2.5)
-      aws-sdk-resources (= 2.2.5)
-    aws-sdk-core (2.2.5)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.2.5)
-      aws-sdk-core (= 2.2.5)
+    aws-sdk (1.64.0)
+      aws-sdk-v1 (= 1.64.0)
+    aws-sdk-v1 (1.64.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.10)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -90,7 +98,6 @@ GEM
     jbuilder (2.3.2)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
-    jmespath (1.1.3)
     jquery-rails (4.0.5)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
@@ -190,12 +197,14 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk
+  aws-s3!
+  aws-sdk (< 2.0)
   better_errors
   bootstrap-sass (~> 3.3.5)
   byebug

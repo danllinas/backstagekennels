@@ -27,7 +27,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'aws-sdk'
+gem 'aws-s3', git: 'https://github.com/bartoszkopinski/aws-s3.git'
+gem 'aws-sdk', '< 2.0'
 gem 'figaro'
 
 # Use ActiveModel has_secure_password
