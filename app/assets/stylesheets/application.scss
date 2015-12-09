@@ -183,6 +183,10 @@ footer {
   p {
     margin: 10px;
   }
+  p.maker{
+    font-size: 0.8em;
+    font-style: italic;
+  }
 }
 
 @media(max-width:1200px) {
